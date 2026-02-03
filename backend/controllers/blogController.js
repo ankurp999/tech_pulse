@@ -179,7 +179,7 @@ exports.getTrendingBlogs = asyncHandler(async (req, res) => {
     .sort({ trendingScore: -1 })
     .limit(10)
     .select(
-      "title slug summary viewsCount likesCount trendingScore publishedAt"
+      "title slug summary viewsCount likesCount trendingScore publishedAt coverImage"
     );
 
   res.json({

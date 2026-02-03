@@ -131,6 +131,7 @@ const seed = async () => {
       blogs.push({
         title: `Tech Insight ${i} – ${cat.name}`,
         slug: `tech-insight-${i}-${cat.slug}`,
+        coverImage: `https://picsum.photos/900/450?random=${i}`,
         summary: `In-depth analysis of latest trends in ${cat.name}.`,
         content: `<p>This article explores how ${cat.name} technology is evolving in ${new Date().getFullYear()}.</p>`,
         category: cat._id,

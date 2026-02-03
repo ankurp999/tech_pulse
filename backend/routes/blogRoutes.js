@@ -15,7 +15,7 @@ const {
 // public routes
 router.get("/", getAllBlogs);
 router.get("/trending", getTrendingBlogs);
-router.get("/:slug", protect, getBlogBySlug);
+router.get("/:slug", getBlogBySlug);
 
 // admin / internal
 router.post("/", protect, adminOnly, createBlog);
