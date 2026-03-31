@@ -1,0 +1,19 @@
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# OS files
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Node modules
+node_modules/
+npm-debug.log
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
