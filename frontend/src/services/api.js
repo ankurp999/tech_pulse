@@ -4,7 +4,7 @@
 import axios from "axios";
 
 const API = axios.create({
-  baseURL: `${process.env.VITE_API_BASE_URL}/api`,
+  baseURL: `${process.env.VITE_API_BASE_URL}`,
   withCredentials: true, // Include cookies in requests
 });
 
