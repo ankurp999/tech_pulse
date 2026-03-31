@@ -8,7 +8,7 @@ const cookieParser = require("cookie-parser");
 // middlewares
 // app.use(cors());
 app.use(cors({
-  origin: "https://tech-pulse-7ygt.vercel.app", // frontend
+  origin: "https://tech-pulse-7ygt.vercel.app/api", // frontend
   credentials: true
 }));
 app.use(cookieParser());
