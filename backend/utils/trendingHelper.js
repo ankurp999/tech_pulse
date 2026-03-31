@@ -11,5 +11,5 @@ exports.calculateTrendingScore = (blog) => {
     blog.likesCount * likesWeight -
     hoursSincePublished * timeDecay;
 
-  return Math.max(Math.floor(score), 0);
+  return Math.max(Math.floor(score),0);
 };
