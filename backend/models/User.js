@@ -37,7 +37,13 @@ const UserSchema = new mongoose.Schema({
     isVarified:{
         type: Boolean,
         default: false
-    }
+    },
+    savedBlogs: [
+      {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: "Blog"
+      }
+    ]
 }, {timestamps: true})
 
 UserSchema.pre('save', async function(){

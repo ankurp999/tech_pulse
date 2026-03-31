@@ -13,7 +13,7 @@ const {
 router.get("/", getAllProducts);
 router.get("/:slug", getProductBySlug);
 
-// admin / internal
-router.post("/", protect, adminOnly, createProduct);
+// protected (any logged-in user can create products for blogs)
+router.post("/", protect, createProduct);
 
 module.exports = router;

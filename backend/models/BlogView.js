@@ -11,13 +11,18 @@ const blogViewSchema = new mongoose.Schema(
     user: {
       type: mongoose.Schema.Types.ObjectId,
       ref: "User",
+      default: null
+    },
+
+    ip: {
+      type: String,
       required: true
     }
   },
   { timestamps: true }
 );
 
-// 🔒 Prevent duplicate views by same user
-blogViewSchema.index({ blog: 1, user: 1 }, { unique: true });
+// 🔒 Prevent duplicate views by same IP on same blog
+blogViewSchema.index({ blog: 1, ip: 1 }, { unique: true });
 
 module.exports = mongoose.model("BlogView", blogViewSchema);

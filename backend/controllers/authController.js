@@ -73,7 +73,12 @@ exports.login = asyncHandler(async (req, res) => {
 
   res.status(200).json({
     success: true,
-    accessToken
+    accessToken,
+    user: {
+      _id: user._id,
+      username: user.username,
+      email: user.email
+    }
   });
 });
 

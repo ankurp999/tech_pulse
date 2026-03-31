@@ -1,6 +1,6 @@
 exports.calculateTrendingScore = (blog) => {
-  const viewsWeight = 1;
-  const likesWeight = 5;
+  const viewsWeight = 5;
+  const likesWeight = 2;
   const timeDecay = 0.3;
 
   const hoursSincePublished =

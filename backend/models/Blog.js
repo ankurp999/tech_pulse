@@ -15,15 +15,8 @@ const blogSchema = new mongoose.Schema(
       lowercase: true,
       index: true,
     },
-
-    summary: {
-      type: String,
-      required: true,
-      trim: true,
-    },
-
     content: {
-      type: String,
+      type: mongoose.Schema.Types.Mixed,
       required: true,
       // HTML / Markdown
     },
@@ -109,6 +102,10 @@ const blogSchema = new mongoose.Schema(
       type: String,
       enum: ["draft", "published"],
       default: "published",
+    },
+    author: {
+      type: mongoose.Schema.Types.ObjectId,
+      ref: "User",
     },
   },
   {

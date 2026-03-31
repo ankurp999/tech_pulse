@@ -27,6 +27,8 @@ app.use("/api/tags", require("./routes/tagRoutes"));
 app.use("/api/blogs", require("./routes/blogRoutes"));
 app.use("/api/blogs", require("./routes/likeRoutes"));
 app.use("/api/products", require("./routes/productRoutes"));
+app.use("/api/upload", require("./routes/uploadImage"));
+app.use("/api/bookmarks", require("./routes/bookmarkRoutes"));
 
 
 
