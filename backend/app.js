@@ -8,7 +8,7 @@ const cookieParser = require("cookie-parser");
 // middlewares
 // app.use(cors());
 app.use(cors({
-  origin: "http://localhost:5173", // frontend
+  origin: "https://tech-pulse-7ygt.vercel.app", // frontend
   credentials: true
 }));
 app.use(cookieParser());
