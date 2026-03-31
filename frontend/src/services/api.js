@@ -4,7 +4,7 @@
 import axios from "axios";
 
 const API = axios.create({
-  baseURL: `${process.env.VITE_API_BASE_URL}`,
+  baseURL: https://tech-pulse-nine.vercel.app/,
   withCredentials: true, // Include cookies in requests
 });
 
@@ -32,7 +32,7 @@ API.interceptors.response.use(
       try {
         // Attempt to refresh the token
         const refreshResponse = await axios.post(
-          `${process.env.VITE_API_BASE_URL}/api/auth/refresh`,
+          https://tech-pulse-nine.vercel.app/api/auth/refresh`,
           {},
           { withCredentials: true }
         );
