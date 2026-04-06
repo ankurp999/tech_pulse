@@ -245,7 +245,7 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 ## 🆘 Support
 
-For support, email support@techpulse.com or open an issue on GitHub.
+For support, email @ankurporwal999@gmail.com or open an issue on GitHub.
 
 ## 🎯 Future Enhancements
 
@@ -260,4 +260,4 @@ For support, email support@techpulse.com or open an issue on GitHub.
 
 ---
 
-Made with ❤️ by Tech Pulse Team
+Made with ❤️ by Tech Pulse creater
